@@ -16,14 +16,15 @@
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
-    <link href="css/soon.css" rel="stylesheet">
+    <link href="css/slider/superslides.css" type="text/css" rel="Stylesheet" />
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,50 +80,35 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in-custom">Nos estamos actualizando</div>
-                <div class="intro-heading">
-                    <img src="img/logos/logo-mp-01.png" class="img-centered" style="margin-bottom: 20px;" alt="Movimiento Peregrino">
-                </div>
-                <a href="#quienes_somos" class="page-scroll btn btn-xl" style="margin-bottom: 20px;">¿Quienes somos?</a>
-                <!-- START TIMER -->
-                <div id="timer" style="display: none;">
-                    <div id="countdown-newpage"></div>
-                    <h3 class="section-subheading" id="message"></h3>
-                    <div id="weeks" class="timer_box">
-                        <h1>0</H1>
-                        <p></p>
+        <div id="slides">
+            <div class="slides-container">
+                <img src="img/header/header_00.jpg" alt="cristo_peregrino">
+                <img src="img/header/header_01.jpg" alt="mip_2014">
+                <img src="img/header/header_02.jpg" alt="40_anhos">
+                <img src="img/header/header_03.jpg" alt="mp_rosario">
+            </div>
+            <div class="container">
+                <div class="intro-text" style="z-index: 10;top: 0;left: 0;position: absolute;right: 0;">
+                    <div class="intro-lead-in-custom" style="font-style:normal;">Nos estamos actualizando</div>
+                    <div class="intro-heading">
+                        <img src="img/logos/logo-mp-01.png" class="img-centered" style="margin-bottom: 20px;" alt="Movimiento Peregrino">
                     </div>
-                    <div id="days" class="timer_box">
-                        <h1>0</H1>
-                        <p>Day</p>
+                    <a href="#quienes_somos" class="page-scroll btn btn-xl" style="margin-bottom: 20px;">¿Quienes somos?</a>
+
+                    <div class="page-scroll">
+                        <ul class="list-inline social-buttons social-buttons-medium">
+                            <li><a target="_blank" href="https://twitter.com/movperegrino"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a target="_blank" href="https://www.facebook.com/movperegrino"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a target="_blank" href="https://instagram.com/movperegrino/"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
                     </div>
-                    <div id="hours" class="timer_box">
-                        <h1>0</H1>
-                        <p>Day</p>
-                    </div>
-                    <div id="minutes" class="timer_box">
-                        <h1>0</H1>
-                        <p>Day</p>
-                    </div>
-                    <div id="seconds" class="timer_box">
-                        <h1>0</H1>
-                        <p>Day</p>
-                    </div>
-                </div>
-                <div class="page-scroll">
-                    <ul class="list-inline social-buttons social-buttons-medium">
-                        <li><a href="https://twitter.com/movperegrino"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/movperegrino"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://instagram.com/movperegrino/"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
+
     </header>
 
     <!-- Quienes somos section. -->
@@ -146,7 +132,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <h2 class="section-subheading text-muted">Nuestro deseo ferviente</h2>
+                <h2 class="section-subheading text-muted" style="font-style:normal;">Nuestro deseo ferviente</h2>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -192,7 +178,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-spinner  fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Consejo</h4>
@@ -206,7 +194,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-graduation-cap fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -220,7 +210,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-users fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -234,7 +226,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-circle-thin fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -248,7 +242,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-book fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -262,7 +258,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-camera-retro fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -276,7 +274,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-user-plus fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -290,7 +290,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-music fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -304,7 +306,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-line-chart fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -318,7 +322,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-home fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -332,7 +338,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-university fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -346,7 +354,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-child fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -360,7 +370,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-heartbeat  fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -374,7 +386,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <div class="icon-equipo-central-custom">
+                            <i class="fa fa-street-view fa-6x"></i>
+                        </div>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Comisión</h4>
@@ -407,127 +421,127 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Retiro de Inicio</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Retiro de Inicio</a></td>
                             <td>13/mar - 18:30</td>
                             <td>15/mar - 19:00</td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>Encuentro Universitarios I</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Universitarios I</a></td>
                             <td>20/mar - 19:00</td>
                             <td>22/mar - 18:30</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>Crecimiento Profesionales</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Crecimiento Profesionales</a></td>
                             <td>27/mar - 18:00</td>
                             <td>29/mar - 19:00</td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>Crecimiento Jóvenes I</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Crecimiento Jóvenes I</a></td>
                             <td>17/abr - 18:00</td>
                             <td>19/abr - 19:00</td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>Crecimiento Universitarios I</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Crecimiento Universitarios I</a></td>
                             <td>24/abr - 18:00</td>
                             <td>26/abr - 18:00</td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td>Encuentro Jóvenes I</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Jóvenes I</a></td>
                             <td>01/may - 18:00</td>
                             <td>03/may - 18:00</td>
                         </tr>
                         <tr>
                             <td>7</td>
-                            <td>Encuentro Profesionales I</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Profesionales I</a></td>
                             <td>22/may - 18:30</td>
                             <td>24/may - 18:00</td>
                         </tr>
                         <tr>
                             <td>8</td>
-                            <td>Retiro de Matrimonios</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Retiro de Matrimonios</a></td>
                             <td>23/may - 18:30</td>
                             <td>24/may - 18:30</td>
                         </tr>
                         <tr>
                             <td>9</td>
-                            <td>Crecimiento Jóvenes II</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Crecimiento Jóvenes II</a></td>
                             <td>29/may - 18:30</td>
                             <td>31/may - 19:30</td>
                         </tr>
                         <tr>
                             <td>10</td>
-                            <td>Encuentro Universitarios II</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Universitarios II</a></td>
                             <td>05/jun - 18:30</td>
                             <td>07/jun - 19:00</td>
                         </tr>
                         <tr>
                             <td>11</td>
-                            <td>Encuentro Jóvenes II</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Jóvenes II</a></td>
                             <td>12/jun - 18:00</td>
                             <td>14/jun - 19:00</td>
                         </tr>
                         <tr>
                             <td>12</td>
-                            <td>Crecimiento Universitarios II</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Crecimiento Universitarios II</a></td>
                             <td>26/jun - 18:30</td>
                             <td>28/jun - 19:00</td>
                         </tr>
                         <tr>
                             <td>13</td>
-                            <td>Encuentro Universitarios III</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Universitarios III</a></td>
                             <td>03/jul - 18:30</td>
                             <td>05/jul - 19:00</td>
                         </tr>
                         <tr>
                             <td>14</td>
-                            <td>Encuentro Profesionales II</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Profesionales II</a></td>
                             <td>10/jul - 19:00</td>
                             <td>12/jul - 18:30</td>
                         </tr>
                         <tr>
                             <td>15</td>
-                            <td>Retiro de Elección de Autoridades</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Retiro de Elección de Autoridades</a></td>
                             <td>08/ago - 10:00</td>
                             <td>09/ago - 19:00</td>
                         </tr>
                         <tr>
                             <td>16</td>
-                            <td>Encuentro Jóvenes III</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Jóvenes III</a></td>
                             <td>21/ago - 18:40</td>
                             <td>23/ago - 19:00</td>
                         </tr>
                         <tr>
                             <td>17</td>
-                            <td>Encuentro Profesionales III</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Profesionales III</a></td>
                             <td>28/ago - 19:00</td>
                             <td>30/ago - 18:30</td>
                         </tr>
                         <tr>
                             <td>18</td>
-                            <td>Encuentro Universitarios IV</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Universitarios IV</a></td>
                             <td>11/sep - 18:30</td>
                             <td>13/sep - 18:30</td>
                         </tr>
                         <tr>
                             <td>19</td>
-                            <td>Encuentro Jóvenes IV</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Jóvenes IV</a></td>
                             <td>18/sep - 18:00</td>
                             <td>20/sep - 19:00</td>
                         </tr>
                         <tr>
                             <td>20</td>
-                            <td>Encuentro Jóvenes V</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Jóvenes V</a></td>
                             <td>02/oct - 18:45</td>
                             <td>04/oct - 19:00</td>
                         </tr>
                         <tr>
                             <td>21</td>
-                            <td>Encuentro Universitarios V</td>
+                            <td><a target="_blank" href="http://inscripciones.movimientoperegrino.org">Encuentro Universitarios V</a></td>
                             <td>16/oct - 18:00</td>
                             <td>18/oct - 19:00</td>
                         </tr>
@@ -624,11 +638,11 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="https://twitter.com/movperegrino"><i class="fa fa-twitter"></i></a>
+                        <li><a target="_blank" href="https://twitter.com/movperegrino"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li><a href="https://www.facebook.com/movperegrino"><i class="fa fa-facebook"></i></a>
+                        <li><a target="_blank" href="https://www.facebook.com/movperegrino"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="https://instagram.com/movperegrino/"><i class="fa fa-instagram"></i></a>
+                        <li><a target="_blank" href="https://instagram.com/movperegrino/"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -645,7 +659,7 @@
             </div>
         </div>
     </footer>
-        
+
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
@@ -666,8 +680,8 @@
                             <h2 class="text-center">Consejo Directivo</h2>
                             <p class="item-intro text-muted"></p>
                             <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
-                            <p>Es  el organismo coordinador y, por lo tanto, deberá ser un grupo que viva criterios de caridad cristiana, tolerancia, espíritu de corrección fraterna, solidaridad, prudencia y máximo sigilo dentro de su seno, impulsando estos valores entre los demás miembros del Movimiento Peregrino a partir de su vivencia.</p>
-                            
+                            <p>Es el organismo coordinador y, por lo tanto, deberá ser un grupo que viva criterios de caridad cristiana, tolerancia, espíritu de corrección fraterna, solidaridad, prudencia y máximo sigilo dentro de su seno, impulsando estos valores entre los demás miembros del Movimiento Peregrino a partir de su vivencia.</p>
+
                             <h4>Esta formado por:</h4>
                             <ul>
                                 <li>Un Coordinador General.</li>
@@ -680,7 +694,7 @@
                                 <li><strong>Un Miembro Asesor.</strong> Nombrado por el Consejo Directivo, de conformidad con lo establecido en el presente estatuto.</li>
                             </ul>
                             <p>Ambos con voz y sin voto, con una duración de 1 año en sus funciones.</p>
-                            
+
                             <h4>Miembros:</h4>
                             <ul>
                                 <li>Rodolfo Barrios.</li>
@@ -716,14 +730,14 @@
                             <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
                             <h4>Objetivo General:</h4>
                             <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo con el fin de que los peregrinos tengan una formación solida y comprometida con los valores evangélicos, den testimonio cristiano y sean protagonistas activos en sus respectivos ámbitos de vida.</p>
-                            
+
                             <h4>Objetivos Específicos:</h4>
                             <ul>
                                 <li>Preparar la Escuela de Formación para los peregrinos que aspiran a ser dirigentes.</li>
                                 <li>Organizar un retiro para los alumnos de la Escuela de Formación de Dirigentes. La asistencia de este retiro es necesaria para egresar de la Escuela.</li>
-                                <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesoreria.  
+                                <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesoreria.
                             </ul>
-                            
+
                             <h4>Coordinadores:</h4>
                             <ul>
                                 <li><strong>Esc. Colegios:</strong> Enzo Berino y Laura Pires.</li>
@@ -757,7 +771,7 @@
                             <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
                             <h4>Objetivo General:</h4>
                             <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo a fin de fomentar la espiritualidad y la experiencia de vida comunitaria de los miembros del Movimiento, a través de grupos peregrinos.</p>
-                            
+
                             <h4>Objetivos Específicos:</h4>
                             <ul>
                                 <li>Velar por los grupos de oración y vida, guiando, orientando y supervisando, mediante la aplicación de distintas metodologías acorde a las necesidades de cada grupo.</li>
@@ -773,7 +787,7 @@
                                 <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería.</li>
                                 <li>Utilizar el Sistema del Equipo Central.</li>
                             </ul>
-                            
+
                             <h4>Coordinadores:</h4>
                             <ul>
                                 <li>Nicolás Talia.</li>
@@ -799,14 +813,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body text-left">
+                        <div class="modal-body text-left">
                             <!-- Project Details Go Here -->
                             <h2 class="text-center">Encuentros</h2>
                             <p class="item-intro text-muted text-center">Comisión Encuentros</p>
                             <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
                             <h4>Objetivo General:</h4>
                             <p>Tiene como principal objetivo formar un equipo humano orientándose como una comunidad de oración y de trabajo que ayuden a la integración y conocimiento de todos y cada uno de los peregrinos.</p>
-                            
+
                             <h4>Objetivos Específicos:</h4>
                             <ul>
                                 <li>Organizar encuentros periódicos para los integrantes del Movimiento (fiestas, cenas, funciones de cine, etc.)</li>
@@ -816,7 +830,7 @@
                                 <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería.</li>
                                 <li>Utilizar el Sistema del Equipo Central.</li>
                             </ul>
-                            
+
                             <h4>Coordinadores:</h4>
                             <ul>
                                 <li>Jimena Costanzo.</li>
@@ -842,14 +856,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body text-left">
+                        <div class="modal-body text-left">
                             <!-- Project Details Go Here -->
                             <h2 class="text-center">Espiritualidad y Liturgia</h2>
                             <p class="item-intro text-muted text-center">Comisión Espiritualidad y Liturgia</p>
                             <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
                             <h4>Objetivo General:</h4>
                             <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo y a través del mismo motivar e incentivar la vivencia espiritual del peregrino que posibilite un encuentro profundo y constante con el Señor.</p>
-                            
+
                             <h4>Objetivos Específicos:</h4>
                             <ul>
                                 <li>Organizar dos misas mensuales. Se puede aprovechar estas fechas para incluir las misas de envío de planteles, misas de clausuras de retiros, día del padre, día de la madre, aniversario del Movimiento, navidad, etc.</li>
@@ -861,7 +875,7 @@
                                 <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería.</li>
                                 <li>Utilizar el Sistema del Equipo Central.</li>
                             </ul>
-                            
+
                             <h4>Coordinadores:</h4>
                             <ul>
                                 <li>Elianne Verón.</li>
@@ -887,14 +901,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body text-left">
+                        <div class="modal-body text-left">
                             <!-- Project Details Go Here -->
                             <h2 class="text-center">Prensa</h2>
                             <p class="item-intro text-muted text-center">Comisión Prensa</p>
                             <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
                             <h4>Objetivo General:</h4>
-                            <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo y a través del mismo proporcionar al peregrino información sobre las diversas actividades del Movimiento,  difundir los valores cristianos de cara a la realidad nacional, así como también encargarse del Marketing.</p>
-                            
+                            <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo y a través del mismo proporcionar al peregrino información sobre las diversas actividades del Movimiento, difundir los valores cristianos de cara a la realidad nacional, así como también encargarse del Marketing.</p>
+
                             <h4>Objetivos Específicos:</h4>
                             <ul>
                                 <li>Realizar publicidad interna y externa de las diferentes actividades del Movimiento a través de los distintos medios de comunicación disponibles</li>
@@ -906,7 +920,7 @@
                                 <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
                                 <li>Utilizar el Sistema del Equipo Central</li>
                             </ul>
-                            
+
                             <h4>Coordinadores:</h4>
                             <ul>
                                 <li>Patricia Vera.</li>
@@ -919,7 +933,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Portfolio Modal 7 -->
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -932,14 +946,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body text-left">
+                        <div class="modal-body text-left">
                             <!-- Project Details Go Here -->
                             <h2 class="text-center">Retiros</h2>
                             <p class="item-intro text-muted text-center">Comisión Retiros</p>
                             <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
                             <h4>Objetivo General:</h4>
                             <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo y a través del mismo apoyar en todas las tareas que impliquen la organización de un retiro peregrino, facilitando de manera eficiente la tarea logística de los coordinadores y sus planteles.</p>
-                            
+
                             <h4>Objetivos Específicos:</h4>
                             <ul>
                                 <li>Contar con todos los elementos necesarios para la organización del retiro y entregarlos a cada persona del plantel designada por el Coordinador en tiempo oportuno, realizando un inventario antes y después de cada retiro</li>
@@ -952,7 +966,7 @@
                                 <li>Serán los encargados responsables del cuidado y coordinación del uso del proyector peregrino, preparando una planilla con los datos y firma correspondiente de los que la utilicen y la actividad para la cual fue utilizada</li>
                                 <li>Hacer una rendición mensual de ingresos</li>
                             </ul>
-                            
+
                             <h4>Coordinadores:</h4>
                             <ul>
                                 <li>Luis Guanes.</li>
@@ -965,75 +979,75 @@
             </div>
         </div>
     </div>
-    
-    
-  <!-- Portfolio Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body text-left">
-                          <!-- Project Details Go Here -->
-                          <h2 class="text-center">Coro</h2>
-                          <p class="item-intro text-muted text-center">Comisión Coro</p>
-                          <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
-                          <h4>Objetivo General:</h4>
-                          <p>Formar un equipo humano orientándose como una comunidad de oración y a través del mismo formar y consolidar un coro, a fin de que el mismo esté presente en las distintas actividades del Movimiento en las que sea necesaria su participación.</p>
-                          
-                          <h4>Objetivos Específicos:</h4>
-                          <ul>
+
+
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Coro</h2>
+                            <p class="item-intro text-muted text-center">Comisión Coro</p>
+                            <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
+                            <h4>Objetivo General:</h4>
+                            <p>Formar un equipo humano orientándose como una comunidad de oración y a través del mismo formar y consolidar un coro, a fin de que el mismo esté presente en las distintas actividades del Movimiento en las que sea necesaria su participación.</p>
+
+                            <h4>Objetivos Específicos:</h4>
+                            <ul>
                                 <li>Asistir a todas las misas, oraciones resortes, y otras actividades del Movimiento donde se requiera la participación del coro</li>
                                 <li>Preparar cancioneros para distribuir entre las personas presentes en las diferentes actividades y una vez finalizadas, responsabilizarse de recoger los mismos</li>
                                 <li>Actualizar los cancioneros ya existentes descartando las músicas que no se utilizan y agregando las nuevas que no se encuentran presentes</li>
                                 <li>Promover entre los peregrinos la composición de músicas propias del Movimiento</li>
                                 <li>Administrar los elementos del coro (micrófonos, parlantes, consolas, cables, etc</li>), encargarse de su buen funcionamiento y mantenimiento</li>
                                 <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
-                                <li>Utilizar el Sistema del Equipo Central</li> 
-                          </ul>
-                          
-                          <h4>Coordinadores:</h4>
-                          <ul>
-                              <li>Francisco Hermosilla.</li>
-                              <li>Francisca Borba.</li>
-                          </ul>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-    
-    
-  <!-- Portfolio Modal 9 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body text-left">
-                          <!-- Project Details Go Here -->
-                          <h2 class="text-center">Asuntos Económicos</h2>
-                          <p class="item-intro text-muted text-center">Comisión Asuntos Económicos</p>
-                          <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
-                          <h4>Objetivo General:</h4>
-                          <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo con la tarea de administrar los bienes con que cuenta el Movimiento, a los efectos de cumplir con sus fines y objetivos.</p>
-                          
-                          <h4>Objetivos Específicos:</h4>
-                          <ul>
+                                <li>Utilizar el Sistema del Equipo Central</li>
+                            </ul>
+
+                            <h4>Coordinadores:</h4>
+                            <ul>
+                                <li>Francisco Hermosilla.</li>
+                                <li>Francisca Borba.</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio Modal 9 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Asuntos Económicos</h2>
+                            <p class="item-intro text-muted text-center">Comisión Asuntos Económicos</p>
+                            <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
+                            <h4>Objetivo General:</h4>
+                            <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo con la tarea de administrar los bienes con que cuenta el Movimiento, a los efectos de cumplir con sus fines y objetivos.</p>
+
+                            <h4>Objetivos Específicos:</h4>
+                            <ul>
                                 <li>Crear los medios adecuados que hagan posible que cada uno de los peregrinos cooperen al sostenimiento económico del Movimiento</li>
                                 <li>Apoyar el trabajo de las demás comisiones, proveyendo a las mismas una suma de dinero a los efectos de utilizarlas en sus actividades</li>
                                 <li>Obtener informes mensuales de egresos e ingresos de todas las demás comisiones</li>
@@ -1041,69 +1055,69 @@
                                 <li>Encargarse de todo lo referente al pago de impuestos y presentaciones de balances e informes que deben realizarse en los organismos de control del Estado</li>
                                 <li>Buscar métodos y estrategias para obtener mayores ingresos</li>
                                 <li>Utilizar el Sistema del Equipo Central</li>
-                          </ul>
-                          
-                          <h4>Coordinadores:</h4>
-                          <ul>
-                              <li>Richard Feltes.</li>
-                              <li>Francisco Riveros.</li>
-                          </ul>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-    
+                            </ul>
 
-  <!-- Portfolio Modal 10 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body text-left">
-                          <!-- Project Details Go Here -->
-                          <h2 class="text-center">Casa</h2>
-                          <p class="item-intro text-muted text-center">Comisión Casa</p>
-                          <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
-                          <h4>Objetivo General:</h4>
-                          <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo a fin de ofrecer al peregrino acogida confortable en la Casa del Movimiento, manteniendo la misma en condiciones de limpieza y orden.</p>
-                          
-                          <h4>Objetivos Específicos:</h4>
-                          <ul>
-                            <li>Verificar periódicamente el funcionamiento de todos los artefactos y dependencias de la casa, reparando o reemplazando lo que haga falta</li>
-                            <li>Encargarse de realizar las compras o reposición de los insumos necesarios para el mantenimiento y limpieza de la casa</li>
-                            <li>Facilitar a comienzo de año a todos los coordinadores de comisiones un duplicado de la llave de la casa, y encargarse de recuperar dichas llaves al finalizar el ciclo</li>
-                            <li>Responsabilizarse de la ambientación de las piezas de la casa</li>
-                            <li>Organizar el “Día de la Casa”</li>
-                            <li>Ponerse a disposición y estar en constante contacto con la cuidadora de la casa para resolver las cuestiones que puedan surgir</li>
-                            <li>Encargarse del pago de sueldo al/la cuidador/a de la casa y al jardinero, así como también el pago de los servicios (agua, luz, etc)</li>
-                            <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
-                            <li>Utilizar el Sistema del Equipo Central</li>
-                          </ul>
-                          
-                          <h4>Coordinadores:</h4>
-                          <ul>
-                              <li>Monserrat Lima.</li>
-                              <li>Montserrat Ferreiro.</li>
-                          </ul>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                            <h4>Coordinadores:</h4>
+                            <ul>
+                                <li>Richard Feltes.</li>
+                                <li>Francisco Riveros.</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  
+
+    <!-- Portfolio Modal 10 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Casa</h2>
+                            <p class="item-intro text-muted text-center">Comisión Casa</p>
+                            <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
+                            <h4>Objetivo General:</h4>
+                            <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo a fin de ofrecer al peregrino acogida confortable en la Casa del Movimiento, manteniendo la misma en condiciones de limpieza y orden.</p>
+
+                            <h4>Objetivos Específicos:</h4>
+                            <ul>
+                                <li>Verificar periódicamente el funcionamiento de todos los artefactos y dependencias de la casa, reparando o reemplazando lo que haga falta</li>
+                                <li>Encargarse de realizar las compras o reposición de los insumos necesarios para el mantenimiento y limpieza de la casa</li>
+                                <li>Facilitar a comienzo de año a todos los coordinadores de comisiones un duplicado de la llave de la casa, y encargarse de recuperar dichas llaves al finalizar el ciclo</li>
+                                <li>Responsabilizarse de la ambientación de las piezas de la casa</li>
+                                <li>Organizar el “Día de la Casa”</li>
+                                <li>Ponerse a disposición y estar en constante contacto con la cuidadora de la casa para resolver las cuestiones que puedan surgir</li>
+                                <li>Encargarse del pago de sueldo al/la cuidador/a de la casa y al jardinero, así como también el pago de los servicios (agua, luz, etc)</li>
+                                <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
+                                <li>Utilizar el Sistema del Equipo Central</li>
+                            </ul>
+
+                            <h4>Coordinadores:</h4>
+                            <ul>
+                                <li>Monserrat Lima.</li>
+                                <li>Montserrat Ferreiro.</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Portfolio Modal 11 -->
     <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1116,7 +1130,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body text-left">
+                        <div class="modal-body text-left">
                             <!-- Project Details Go Here -->
                             <h2 class="text-center">Universidad Peregrina</h2>
                             <p class="item-intro text-muted text-center">Comisión UNIP</p>
@@ -1126,11 +1140,11 @@
 
                             <h4>Objetivos Específicos:</h4>
                             <ul>
-                              <li>Llevar adelante la Universidad Peregrina</li> Los temas a ser desarrollados en la UNIP deben estar basados en los siguientes ejes: espiritual, formativo y personal, con la Biblia como eje transversal</li>
-                              <li>Elaborar una malla curricular anual teniendo en cuenta: cantidad de encuentros, características y periodicidad de los mismos, y posibles disertantes</li>
-                              <li>Establecer mecanismos para el control de asistencias, créditos, etc</li>, como requisitos para egresar de la UNIP</li>
-                              <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
-                              <li>Utilizar el Sistema del Equipo Central</li>
+                                <li>Llevar adelante la Universidad Peregrina</li> Los temas a ser desarrollados en la UNIP deben estar basados en los siguientes ejes: espiritual, formativo y personal, con la Biblia como eje transversal</li>
+                                <li>Elaborar una malla curricular anual teniendo en cuenta: cantidad de encuentros, características y periodicidad de los mismos, y posibles disertantes</li>
+                                <li>Establecer mecanismos para el control de asistencias, créditos, etc</li>, como requisitos para egresar de la UNIP</li>
+                                <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
+                                <li>Utilizar el Sistema del Equipo Central</li>
                             </ul>
 
                             <h4>Coordinadores:</h4>
@@ -1146,50 +1160,50 @@
         </div>
     </div>
 
-    
-      <!-- Portfolio Modal 12 -->
-      <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal">
-                  <div class="lr">
-                      <div class="rl">
-                      </div>
-                  </div>
-              </div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2">
-                         <div class="modal-body text-left">
-                              <!-- Project Details Go Here -->
-                              <h2 class="text-center">Pastoral</h2>
-                              <p class="item-intro text-muted text-center">Comisión Pastoral</p>
-                              <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
-                              <h4>Objetivo General:</h4>
-                              <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo con la tarea de proporcionar al peregrino espacios en los cuales pueda tener contacto con la realidad del país, dando a conocer a Cristo, con el carisma peregrino, a través de distintas actividades.</p>
 
-                              <h4>Objetivos Específicos:</h4>
-                              <ul>
+    <!-- Portfolio Modal 12 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Pastoral</h2>
+                            <p class="item-intro text-muted text-center">Comisión Pastoral</p>
+                            <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
+                            <h4>Objetivo General:</h4>
+                            <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo con la tarea de proporcionar al peregrino espacios en los cuales pueda tener contacto con la realidad del país, dando a conocer a Cristo, con el carisma peregrino, a través de distintas actividades.</p>
+
+                            <h4>Objetivos Específicos:</h4>
+                            <ul>
                                 <li>Promover la evangelización a través de actividades sugeridas por la Pastoral Arquidiocesana</li>
                                 <li>Planificar y llevar a cabo una actividad durante la Semana Santa</li>
                                 <li>Preparar la logística de las Misiones Peregrinas (conformar el plantel organizador, seleccionar el/los pueblo/s, definir las fechas, costos, organizar los encuentros previos, etc</li>) y llevar a cabo la misión</li>
                                 <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
                                 <li>Utilizar el Sistema del Equipo Central</li>
-                              </ul>
+                            </ul>
 
-                              <h4>Coordinadores:</h4>
-                              <ul>
-                                  <li>Laura Bertón.</li>
-                                  <li>Mario Ramirez.</li>
-                              </ul>
-                              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  
-      
+                            <h4>Coordinadores:</h4>
+                            <ul>
+                                <li>Laura Bertón.</li>
+                                <li>Mario Ramirez.</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Portfolio Modal 13 -->
     <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1202,7 +1216,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body text-left">
+                        <div class="modal-body text-left">
                             <!-- Project Details Go Here -->
                             <h2 class="text-center">Acción Social</h2>
                             <p class="item-intro text-muted text-center">Comisión Acción Social</p>
@@ -1212,14 +1226,14 @@
 
                             <h4>Objetivos Específicos:</h4>
                             <ul>
-                              <li>Identificar los proyectos o causas que se tomarán como apostolado del Movimiento Peregrino</li>
-                              <li>Ofrecer a los grupos del Movimiento proyectos de apostolado concretos y sostenibles en el tiempo, haciendo un seguimiento de los mismos</li>
-                              <li>Establecer el calendario de apostolados del año</li>
-                              <li>Establecer vínculos con las diferentes organizaciones no gubernamentales del país</li>
-                              <li>Organizar la logística de cada apostolado</li>
-                              <li>Fomentar la participación de los peregrinos en los proyectos que se lleven adelante</li>
-                              <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
-                              <li>Utilizar el Sistema del Equipo Central</li>
+                                <li>Identificar los proyectos o causas que se tomarán como apostolado del Movimiento Peregrino</li>
+                                <li>Ofrecer a los grupos del Movimiento proyectos de apostolado concretos y sostenibles en el tiempo, haciendo un seguimiento de los mismos</li>
+                                <li>Establecer el calendario de apostolados del año</li>
+                                <li>Establecer vínculos con las diferentes organizaciones no gubernamentales del país</li>
+                                <li>Organizar la logística de cada apostolado</li>
+                                <li>Fomentar la participación de los peregrinos en los proyectos que se lleven adelante</li>
+                                <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
+                                <li>Utilizar el Sistema del Equipo Central</li>
                             </ul>
 
                             <h4>Coordinadores:</h4>
@@ -1234,51 +1248,51 @@
             </div>
         </div>
     </div>
-        
-        
-        
-      <!-- Portfolio Modal 14 -->
-      <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal">
-                  <div class="lr">
-                      <div class="rl">
-                      </div>
-                  </div>
-              </div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2">
-                         <div class="modal-body text-left">
-                              <!-- Project Details Go Here -->
-                              <h2 class="text-center">Formación</h2>
-                              <p class="item-intro text-muted text-center">Comisión Formación</p>
-                              <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
-                              <h4>Objetivo General:</h4>
-                              <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo con la tarea de proporcionar al peregrino espacios de formación a través de metodologías propias, para ayudar a profundizar la fe y proporcionarle herramientas para su vida cristiana.</p>
 
-                              <h4>Objetivos Específicos:</h4>
-                              <ul>
+
+
+    <!-- Portfolio Modal 14 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Formación</h2>
+                            <p class="item-intro text-muted text-center">Comisión Formación</p>
+                            <!--<img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">-->
+                            <h4>Objetivo General:</h4>
+                            <p>Formar un equipo humano orientándose como una comunidad de oración y de trabajo con la tarea de proporcionar al peregrino espacios de formación a través de metodologías propias, para ayudar a profundizar la fe y proporcionarle herramientas para su vida cristiana.</p>
+
+                            <h4>Objetivos Específicos:</h4>
+                            <ul>
                                 <li>Identificar y establecer tres metodologías de formación a desarrollar durante el año</li> Estas metodologías estarán dirigidas primordialmente a los peregrinos que no puedan cursar la UNIP aún</li>
                                 <li>Preparar el calendario de actividades de formación que se realizarán a lo largo del año, establecer el programa de los encuentros, organizar los mismos y contactar con los disertantes</li>
                                 <li>Llevar a cabo un Curso de Biblia</li>
                                 <li>Organizar el Taller de Fermentos</li>
                                 <li>Hacer una rendición mensual de ingresos y egresos a la Comisión Tesorería</li>
                                 <li>Utilizar el Sistema del Equipo Central</li>
-                              </ul>
+                            </ul>
 
-                              <h4>Coordinadores:</h4>
-                              <ul>
-                                  <li>Jurgen Vouga.</li>
-                                  <li>Melissa Torales.</li>
-                              </ul>
-                              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+                            <h4>Coordinadores:</h4>
+                            <ul>
+                                <li>Jurgen Vouga.</li>
+                                <li>Melissa Torales.</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -1298,36 +1312,18 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
-    <!-- Coundown jquery -->
-    <script src="js/jquery.countdown.min.js"></script>
+    <!--Slider-->
+    <script src="js/slider/jquery.animate-enhanced.min.js"></script>
+    <script src="js/slider/jquery.easing.1.3.js"></script>
+    <script src="js/slider/jquery.superslides.min.js"></script>
 
-    <script type="text/javascript">
-        var message = $('#message');
-        var weeks = $('#weeks');
-        var days = $('#days');
-        var hours = $('#hours');
-        var minutes = $('#minutes');
-        var seconds = $('#seconds');
-
-        message.html("Nuestro sitio aún no esta listo, pero falta poco...");
-
-        $('#countdown-newpage').countdown('2016/01/01').on('update.countdown', function (event) {
-
-            weeks.html(
-                event.strftime('<h1>%-w</H1> <p>semana%!w</p>')
-            );
-            days.html(
-                event.strftime('<h1>%-d</H1> <p>dia%!d</p>')
-            );
-            hours.html(
-                event.strftime('<h1>%H</H1> <p>hr</p>')
-            );
-            minutes.html(
-                event.strftime('<h1>%M</H1> <p>min</p>')
-            );
-            seconds.html(
-                event.strftime('<h1>%S</H1> <p>sec</p>')
-            );
+    <script>
+        $(function () {
+            $('#slides').superslides({
+                hashchange: true,
+                play: 5000,
+                animation: 'fade'
+            });
         });
     </script>
 

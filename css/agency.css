@@ -257,7 +257,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/fondo_mp.jpg);
+    /*    background-image: url(../img/fondo_mp.jpg);*/
+    
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -338,6 +339,7 @@ section h3.section-subheading {
     font-style: italic;
     font-weight: 400;
 }
+
 @media(min-width:768px) {
     section {
         padding: 150px 0;
@@ -357,6 +359,17 @@ section h3.section-subheading {
     margin: 0 auto;
     max-width: 400px;
 }
+
+.portfolio-link .icon-equipo-central-custom {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 260px;
+    width: 360px;
+    background: #FED136;
+    color:#000000;
+}
+
 #equipo_central .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
