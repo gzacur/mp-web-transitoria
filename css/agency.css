@@ -257,8 +257,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    /*    background-image: url(../img/fondo_mp.jpg);*/
-    
+/*    background-image: url(../img/header/header_00.jpg);*/
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -328,8 +327,12 @@ section h2.section-subheading {
     text-transform: none;
     font-family: Caecilia-LT-Std-56Italic, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
-    font-style: italic;
+    /*    font-style: italic;*/
+    
     font-weight: 400;
+}
+section h2.section-subheading.uppercase {
+    text-transform: uppercase;
 }
 section h3.section-subheading {
     margin-bottom: 75px;
@@ -339,7 +342,6 @@ section h3.section-subheading {
     font-style: italic;
     font-weight: 400;
 }
-
 @media(min-width:768px) {
     section {
         padding: 150px 0;
@@ -359,7 +361,6 @@ section h3.section-subheading {
     margin: 0 auto;
     max-width: 400px;
 }
-
 .portfolio-link .icon-equipo-central-custom {
     display: table-cell;
     text-align: center;
@@ -367,9 +368,8 @@ section h3.section-subheading {
     height: 260px;
     width: 360px;
     background: #FED136;
-    color:#000000;
+    color: #000000;
 }
-
 #equipo_central .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
@@ -815,4 +815,13 @@ img::-moz-selection {
 }
 body {
     webkit-tap-highlight-color: #fed136;
+}
+/*Tamaño de las imágenes para el header.*/
+
+.carousel-inner .item img {
+    width: 100%;
+    height: 100%;
+}
+i.custom-font {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
