@@ -257,7 +257,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-/*    background-image: url(../img/header/header_00.jpg);*/
+    /*    background-image: url(../img/header/header_00.jpg);*/
+    
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -277,7 +278,6 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 header .intro-text .intro-lead-in-custom {
-    margin-bottom: 25px;
     font-family: Caecilia-LT-Std-56Italic;
     font-size: 30px;
     font-style: italic;
@@ -824,4 +824,14 @@ body {
 }
 i.custom-font {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.intro-cell {
+    background-color: rgba(254, 209, 54, .5);
+}
+
+.table a{
+    font-weight: bold;
+}
+.table i{
+    font-weight: bold;
 }
