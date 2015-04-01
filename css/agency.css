@@ -169,6 +169,10 @@ fieldset[disabled] .btn-xl.active {
     color: #fed136;
     background-color: #fff;
 }
+.btn-intro {
+    background-color: rgba(254, 209, 54, .5);
+    border-color: rgba(254, 209, 54, .5);
+}
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -827,11 +831,19 @@ i.custom-font {
 }
 .intro-cell {
     background-color: rgba(254, 209, 54, .5);
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+    margin: auto;
 }
-
-.table a{
+}
+.table a {
     font-weight: bold;
 }
-.table i{
+.table i {
     font-weight: bold;
+}
+.img-intro-centered {
+    margin-top: 16%;
+    margin-left: 2%;
 }
